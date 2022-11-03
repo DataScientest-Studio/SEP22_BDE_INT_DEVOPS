@@ -12,3 +12,7 @@ def test_status():
 def test_dict():
     r = requests.get("http://localhost:8000/dict")
     assert "data" in r.json() 
+
+def test_weather():
+    r = requests.get("http://localhost:8000/weather")
+    assert r.json()=="Sunny"

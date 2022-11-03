@@ -17,3 +17,7 @@ def dic():
 @api.get("/")
 def test():
     return {}
+
+@api.get("/weather")
+def meteo():
+    return "Sunny"
